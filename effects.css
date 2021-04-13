@@ -1,3 +1,11 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .intro-effects {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -5,6 +13,58 @@
   background-size: cover;
   background-position: 0% 50%;
 }
-main {
+
+.title {
+  font-size: 5rem;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-left: 15%;
+  letter-spacing: 3rem;
+}
+
+.slider {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 40px solid white;
+  border-top: 0px;
+  transition: all 0.5s ease;
+}
+
+.slider .left-slide,
+.slider .right-slide {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.slider .left-slide {
+  left: -40px;
+}
+
+.slider .right-slide {
+  right: -40px;
+}
+
+.slider .slider-items .item img {
+  max-width: 100%;
+  display: block;
+}
+
+.slider .slider-items .item {
+  display: none;
+}
+
+.slider .slider-items .item.active {
+  display: block;
+}
+
+.caption {
   font-size: 1.5rem;
 }
