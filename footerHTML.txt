@@ -1,17 +1,35 @@
 <div class="footer">
-    <div class="footerleft">
-      <h3>Find us on: </h3>
-      <div class="social">
-        <a href="https://www.facebook.com/"> <img src="https://niforeika-beach.gr/wp-content/uploads/2018/02/facebook-logo-png-white-i6.png" style="width:10%"> </a>
-        <a href="https://twitter.com/?lang=el"> <img src="https://i.pinimg.com/originals/b8/c8/46/b8c846a25866985a5719049b9f0c5890.png" style="width:10%"> </a>
-        <a href="https://www.instagram.com/"> <img src="https://c0.klipartz.com/pngpicture/220/720/gratis-png-logotipo-de-instagram-casa-blanca-universidad-de-samford-estados-unidos-encuesta-geologica-logotipo-de-empresa-casa-blanca-thumbnail.png" style="width:10%"> </a>
-        <a href="https://www.instagram.com/"> <img src="https://c0.klipartz.com/pngpicture/220/720/gratis-png-logotipo-de-instagram-casa-blanca-universidad-de-samford-estados-unidos-encuesta-geologica-logotipo-de-empresa-casa-blanca-thumbnail.png" style="width:10%"> </a>
-        </div>
+    <div class="row">
+      <div class="col-sm">
+       <div class="footerleft">
+         <h3 class="title1">Find us on: </h3>
+         <div class="social">
+          <a href="https://www.facebook.com/"> <img src="pictures/facebook-f.png" style="width:6.5%"> </a>
+          <a href="https://twitter.com/?lang=el"> <img src="pictures/twitter.png" style="width:10%"> </a>
+          <a href="https://www.instagram.com/"> <img src="pictures/instagram.png" style="width:9%"> </a>
+          <a href="#"> <img src="pictures/mail.png" style="width:13%"> </a>
+          </div>
+       </div>
       </div>
-    <div class="fl2">
-      <h3>Eleni</h3>
+      <div class="col-sm">
+       <div class="fl2">
+        <h3>Eleni</h3>
+        <div class="social">
+          
+          </div>
+       </div>
       </div>
-    <div class="fl3">
-      <h3>Eleni</h3>
+      <div class="col-sm">
+       <div class="fl3">
+        <h3>Eleni</h3>
+        <div class="social">
+          
+          </div>
+       </div>
       </div>
-</div>
+      
+    </div>
+  </div>
+  <div class="footer-end py-3">
+    <p>&copy;DAY ZERO 2021</p>
+  </div>
