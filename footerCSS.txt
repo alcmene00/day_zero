@@ -1,0 +1,26 @@
+.footer {
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  background-color: #8080ff;
+  color: #e6f2ff;
+  text-align: center;
+  
+  display:-webkit-flex;
+}
+.footerleft{
+  width:33.3%;
+}
+.social{
+  position:center;
+  background-color: red;
+  margin-bottom: 10%;
+}
+.fl2{
+  text-align : center;
+  width:33.3%;
+}
+.fl3{
+  text-align : center;
+  width:33.3%;
+}
