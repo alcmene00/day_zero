@@ -2,13 +2,110 @@ nav {
   top: 0%;
   position: sticky;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 .intro-home {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://images.unsplash.com/photo-1542013936693-884638332954?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: 20% 40%;
 }
+/*
+header{
+  width:100%;
+  height:100vh;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top,#ffff,transparent);
+  z-index: 2;
+} */
+
+header::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+  z-index: 20;
+  mix-blend-mode: color;
+}
+
+.main-intro .drops{
+  margin: 0 0 0 0px; 
+  position: absolute;
+  bottom: 0;
+  width: 1000px;
+  right: 0;
+  z-index: 19;
+  /*object-fit: cover;*/
+}
+
+.main-intro .basic{
+  position: absolute;
+  width: 1903px;
+  bottom: 0;
+  left: 0;
+  z-index: 18;
+}
+
+.main-intro .upwater{
+  position: absolute;
+  width: 1600px;
+  bottom: 150px;
+  left: 0;
+  z-index: 20;
+}
+
 main {
   font-size: 1.5rem;
+}
+ 
+
+h3{
+  margin-bottom: 10 rem;
+  padding-bottom: 10 rem;
+  color: black;
+  font-size: 5rem;
+  text-align: center;
+  position: relative;
+  /*margin-right: 150px;*/
+  white-space: break-spaces;
+  position: relative;
+  top: 75px
+}
+
+p{
+  height: 100vh;
+  /*display: inline;*/
+  margin-bottom: 5 rem;
+  padding-bottom: 5 rem;
+  font-size: 3 rem;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  /*margin-left: 50;
+  /*margin-right: 150px;*/
+  white-space: break-spaces;
+  position: relative;
+  top: 75px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.waterdrop{
+  width: 70%;
+  /*margin: 0 0 0 250px;*/
+ /* transform: translateY(-900px);*/
+  margin-top: 10%;
+  position: relative;
+  z-index: 2;
+  left:20%;
+
 }
