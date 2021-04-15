@@ -1,26 +1,29 @@
 body {
-    margin: 0;
     background-color: white;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
+.what-intro{
+    height: 85vh;
+    background: url(/pictures/hand.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+    background-position: center;
 
-.titles {
+}
+
+.titles{
     border-style: none none solid none;
     border-bottom: 3px solid #b4c6dd;
     font-size: 5rem;
-}
-
-.responsive {
-    max-width: 100%;
-    height: auto;
 }
 
 p {
     font-size: 1.6rem;
 }
 
-h2 {
+h2{
     text-align: center;
     text-shadow: 2px 2px 5px grey;
     font-size: 8rem;
@@ -43,37 +46,42 @@ h5{
     transition: all 0.5s ease;
 }
 
-    .slider .left-slide,
-    .slider .right-slide {
-        position: absolute;
-        top: 50%;
-        margin-top: -20px;
-        text-align: center;
-        line-height: 40px;
-        cursor: pointer;
-    }
+.slider .left-slide,
+.slider .right-slide {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
 
-    .slider .left-slide {
-        left: -40px;
-    }
+.slider .left-slide {
+    left: -40px;
+}
 
-    .slider .right-slide {
-        right: -40px;
-    }
+.slider .right-slide {
+    right: -40px;
+}
 
-    .slider .slider-items .item img {
-        max-width: 100%;
-        display: block;
-    }
+.slider .slider-items .item img {
+    max-width: 100%;
+    display: block;
+}
 
-    .slider .slider-items .item {
-        display: none;
-    }
+.slider .slider-items .item {
+    display: none;
+}
 
-        .slider .slider-items .item.active {
-            display: block;
-        }
+.slider .slider-items .item.active {
+    display: block;
+}
 
+.slider a:link, .slider a:visited, .slider a:hover, .slider a:active{
+    color:#000000;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px grey;
+}
 .caption {
     text-align: center;
     font-size: 1.8rem;
