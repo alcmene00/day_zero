@@ -5,7 +5,7 @@ body {
 }
 
 
-h3 {
+.titles {
     border-style: none none solid none;
     border-bottom: 3px solid #b4c6dd;
     font-size: 5rem;
