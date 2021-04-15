@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+
+h3 {
+    border-style: none none solid none;
+    border-bottom: 3px solid #b4c6dd;
+    font-size: 5rem;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 5px grey;
+    font-size: 8rem;
+}
+
+h5{
+    font-size: 6em;
+}
+
+.slider {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 40px solid white;
+    border-top: 0px;
+    transition: all 0.5s ease;
+}
+
+    .slider .left-slide,
+    .slider .right-slide {
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+    .slider .left-slide {
+        left: -40px;
+    }
+
+    .slider .right-slide {
+        right: -40px;
+    }
+
+    .slider .slider-items .item img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .slider .slider-items .item {
+        display: none;
+    }
+
+        .slider .slider-items .item.active {
+            display: block;
+        }
+
+.caption {
+    text-align: center;
+    font-size: 1.8rem;
+}
