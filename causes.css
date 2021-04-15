@@ -1,0 +1,191 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(238, 249, 252);
+  top: 0%;
+  position: sticky;
+  z-index: 3;
+  width: 100%;
+  height: 15vh;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.8rem;
+}
+
+.nav-links li {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-links a {
+  display: flex;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(67, 70, 71, 0.527);
+  margin-left: 2.5vh;
+  margin-right: 2.5vh;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links a:after {
+  /*grammi katw apo tis epiloges tou menu*/
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.22rem;
+  left: 50%;
+  position: absolute;
+  background: rgba(67, 70, 71, 0.527);
+  transition: width 0.4s ease 0s, left 0.4s ease 0s;
+  width: 0;
+}
+
+.nav-links a:hover {
+  color: rgba(67, 70, 71, 0.527);
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav div {
+  /* grammoules menu panw deksia */
+  width: 25px;
+  height: 3px;
+  background-color: rgba(67, 70, 71, 0.527);
+  margin: 5px;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 950px) {
+  .nav-links {
+    position: absolute;
+    right: 0vh;
+    height: 85vh;
+    top: 15vh;
+    background-color: rgb(238, 249, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+
+
+
+
+.title-img{
+  background-image: url("https://www.futurewater.eu/wp-content/uploads/2020/06/Waterschaarste.jpg");
+}
+.space{
+  height: 30vh;
+}
+
+.tears{
+  position:center;
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+}
+
+.tear{
+  padding: 5%;
+  max-width: 60%;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  font-size: 500%;
+  color: #7a7a52;
+}
+
+.text{
+  color: #7a7a52;
+  background-color: white;
+  font-size: 150%;
+  text-align: center;
+  text-indent: 10%;
+  padding: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.text-img{
+  size: 100%;
+}
+
+.titles-h1{
+  font-size:300%;
+}
