@@ -121,6 +121,7 @@ main {
   
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 450px;
 }
 
 .waterdrop{
@@ -135,5 +136,4 @@ main {
   top: 20%;
   z-index: 2;
   margin-left:25%;
-
 }
