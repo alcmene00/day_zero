@@ -38,7 +38,7 @@ nav {
   letter-spacing: 0.3rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: rgba(67, 70, 71, 0.527);
+  color: #7e939a;
   margin-left: 2.5vh;
   margin-right: 2.5vh;
   align-items: center;
@@ -54,13 +54,13 @@ nav {
   height: 0.22rem;
   left: 50%;
   position: absolute;
-  background: rgba(67, 70, 71, 0.527);
+  background: #7e939a;
   transition: width 0.4s ease 0s, left 0.4s ease 0s;
   width: 0;
 }
 
 .nav-links a:hover {
-  color: rgba(67, 70, 71, 0.527);
+  color: #7e939a;
 }
 
 .nav-links a:hover:after {
@@ -76,7 +76,7 @@ nav {
   /* grammoules menu panw deksia */
   width: 25px;
   height: 3px;
-  background-color: rgba(67, 70, 71, 0.527);
+  background-color: #7e939a;
   margin: 5px;
   margin-right: 20px;
   transition: all 0.3s ease;
