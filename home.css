@@ -125,15 +125,41 @@ main {
 }
 
 .waterdrop{
-  width: 50%;
+  width: 80%;
   /*margin: 0 0 0 250px;*/
  /* transform: translateY(-900px);*/
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   /*position: relative; */
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 20%;
   z-index: 2;
-  margin-left:25%;
+  margin-left:10%;
+}
+
+.recommendations{
+  position: relative;
+  display: flex;
+}
+.recommendations .waterplants{
+  width: 100%;
+  position: relative;
+}
+
+.whatyoucan{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  color: black;
+  font-size:4rem;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.recommendations .rec{
+  text-align:center;
+  text-transform: uppercase;
+  color: black;
+  font-size:1.8rem;
+  margin-bottom: 10%;
 }
