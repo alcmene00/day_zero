@@ -167,7 +167,7 @@ img{
 }
 
 .text{
-  color: #7a7a52;
+  color: black;
   background-color: white;
   font-size: 150%;
   text-align: center;
@@ -176,7 +176,8 @@ img{
 }
 
 .text-img{
-  size: 100%;
+  height: 40vh;
+  width:100%;
 }
 
 .titles-h1{
