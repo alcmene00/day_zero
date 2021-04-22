@@ -73,7 +73,7 @@ header::after{
 }
 
 main {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
  
 
@@ -121,7 +121,7 @@ main {
   
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 450px;
+  margin-bottom: 320px;
 }
 
 .waterdrop{
