@@ -16,11 +16,12 @@ body {
 .titles{
     border-style: none none solid none;
     border-bottom: 3px solid #b4c6dd;
-    font-size: 5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 h2{
