@@ -4,66 +4,85 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: var(--bs-font-sans-serif);
 }
-.title-img{
+.title-img {
+  background-color: rgb(105, 105, 204);
   background-size: cover;
   background-position: 20% 40%;
-  height: 100vh;
   background-image: url("https://www.futurewater.eu/wp-content/uploads/2020/06/Waterschaarste.jpg");
+  height: 85vh;
 }
-.space{
-  height: 30vh;
+.space {
+  height: 10vh;
 }
 
-.tears{
-  position:center;
-  width: 100%;
+.tears {
   text-align: center;
-  padding: 3%;
+  display: flex;
+  justify-content: space-around;
 }
 
-.tear{
-  padding: 5%;
-  max-width: 60%;
+.tear {
+  padding: 15%;
+  height: 60vh;
 }
 
-img{
+img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-.title{
+@media screen and (max-width: 750px) {
+  .tears {
+    display: block;
+  }
+  .tear {
+    padding: 0%;
+    height: 34vh;
+  }
+  .space {
+    height: 5vh;
+  }
+}
+
+.title {
   width: 100%;
   text-align: center;
   background-color: white;
   font-size: 500%;
-  color: #7a7a52;
+  color: black;
+  letter-spacing: 3rem;
 }
 
-.text{
+.text {
   color: black;
   background-color: white;
-  font-size: 150%;
+  font-size: 200%;
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.text-img{
+.text-img {
   height: 40vh;
-  width:100%;
+  width: 100%;
+}
+.line-img {
+  height: 3vh;
+  width: 100%;
 }
 
-.titles-h1{
-  font-size:300%;
-  color: #7a7a52;
+.titles-h1 {
+  font-size: 400%;
+  color: black;
   background-color: white;
   text-align: center;
   padding: 5%;
 }
-.titles-h2{
-  font-size:200%;
-  color: #7a7a52;
+.titles-h2 {
+  font-size: 300%;
+  color: black;
   background-color: white;
   text-align: center;
   padding: 5%;

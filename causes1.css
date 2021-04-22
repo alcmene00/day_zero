@@ -14,21 +14,21 @@ body {
   height: 100vh;
   background-image: url("https://www.futurewater.eu/wp-content/uploads/2020/06/Waterschaarste.jpg");
 }
-.space{
+.space {
   height: 10vh;
 }
 
-.tears{
+.tears {
   text-align: center;
   display: flex;
   justify-content: space-around;
 }
 
-.tear{
+.tear {
   padding: 15%;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -43,7 +43,7 @@ img{
   }
 }
 
-.title{
+.title {
   width: 100%;
   text-align: center;
   background-color: white;
@@ -52,7 +52,7 @@ img{
   letter-spacing: 3rem;
 }
 
-.text{
+.text {
   color: black;
   background-color: white;
   font-size: 200%;
@@ -61,24 +61,24 @@ img{
   margin-right: 5%;
 }
 
-.text-img{
+.text-img {
   height: 40vh;
-  width:100%;
+  width: 100%;
 }
-.line-img{
+.line-img {
   height: 3vh;
-  width:100%;
+  width: 100%;
 }
 
-.titles-h1{
-  font-size:400%;
+.titles-h1 {
+  font-size: 400%;
   color: black;
   background-color: white;
   text-align: center;
   padding: 5%;
 }
-.titles-h2{
-  font-size:300%;
+.titles-h2 {
+  font-size: 300%;
   color: black;
   background-color: white;
   text-align: center;
