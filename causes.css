@@ -79,6 +79,7 @@ img {
   background-color: white;
   text-align: center;
   padding: 5%;
+  letter-spacing: 2rem;
 }
 .titles-h2 {
   font-size: 300%;
@@ -86,4 +87,5 @@ img {
   background-color: white;
   text-align: center;
   padding: 5%;
+  letter-spacing: 1rem;
 }
