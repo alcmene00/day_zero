@@ -8,11 +8,10 @@ body {
 }
 .title-img {
   background-color: rgb(105, 105, 204);
-  height: 85vh;
   background-size: cover;
   background-position: 20% 40%;
-  height: 100vh;
   background-image: url("https://www.futurewater.eu/wp-content/uploads/2020/06/Waterschaarste.jpg");
+  height: 85vh;
 }
 .space {
   height: 10vh;
@@ -26,20 +25,24 @@ body {
 
 .tear {
   padding: 15%;
+  height: 60vh;
 }
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
   .tears {
     display: block;
   }
   .tear {
     padding: 0%;
-    height: 40vh;
+    height: 34vh;
+  }
+  .space {
+    height: 5vh;
   }
 }
 
@@ -76,6 +79,7 @@ img {
   background-color: white;
   text-align: center;
   padding: 5%;
+  letter-spacing: 2rem;
 }
 .titles-h2 {
   font-size: 300%;
@@ -83,4 +87,5 @@ img {
   background-color: white;
   text-align: center;
   padding: 5%;
+  letter-spacing: 1rem;
 }
