@@ -22,6 +22,15 @@ main .ref-title {
     width: 28%;
     text-transform: uppercase;
 }
+@media screen and (max-width: 750px) {
+    main .ref-title{
+        width: 100%;
+        text-align: center;
+    }
+    main .ref-home, main .ref-causes, main .ref-effects, main .ref-what{
+        text-align: center;
+    }
+}
 
 main a:link {
     color: #b4c6dd;
