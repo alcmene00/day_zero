@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.account-background {
+    height: 85vh;
+    background-image: url(kai-dahms-FB_xKJOLsfI-unsplash.jpg);
+    background-size: cover;
+    background-position: 0% 45%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-size: 8rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+
+
+h2 {
+    text-align: center;
+    border-style: none none solid none;
+    border-bottom: 3px solid #b4c6dd;
+    text-shadow: 2px 2px 5px grey;
+    font-size: 8rem;
+}
+
+
+.form-group{
+    font-size: 1.6rem;
+}
+
+
+.intro{
+    padding: 30px;
+}
+
+main {
+    min-height: 100vh;
+}
