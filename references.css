@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%;
+}
+  
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+  
+body {
+    overflow-x: hidden;
+    font-family: var(--bs-font-sans-serif);
+}
+
+main .ref-title {
+    font-size: 5rem;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-style: none none solid none;
+    border-bottom: 5px solid #b4c6dd;
+    width: 28%;
+    text-transform: uppercase;
+}
+
+main a:link {
+    color: #b4c6dd;
+    text-decoration: none;
+}
+main a:visited {
+    color: #b4c6dd;
+    text-decoration: none;
+}
+main a:hover {
+    color: #788697;
+    text-decoration: none;
+}
+main a:active {
+    color: #788697;
+    text-decoration: none;
+}
+
+main .ref-home, main .ref-causes, main .ref-effects, main .ref-what{
+    font-size: 3.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-image: url('/pictures/drop-list.png');
+    margin-bottom: 2%;
+  }
+
+main .sources{
+    margin-bottom: 2%;
+}
+main{
+    margin-bottom: 2%;
+}
+main .border{
+    position: relative;
+    width: 100%;
+    left: 0%;
+    height: 5px;
+    background-color:#bcd6e6;
+}
