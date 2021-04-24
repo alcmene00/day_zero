@@ -82,16 +82,18 @@ img {
   width: 100%;
 }
 
-.titles-h1 {
+.titles-h3 {
+  font-weight: normal;
   font-size: 400%;
   color: black;
   text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   letter-spacing: 1rem;
 }
 
-.titles-h2 {
+.titles-h4 {
+  font-weight: normal;
   font-size: 300%;
   color: black;
   text-align: center;
