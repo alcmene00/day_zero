@@ -33,19 +33,19 @@ main .ref-title {
 }
 
 main a:link {
-    color: #b4c6dd;
+    color: #788697;
     text-decoration: none;
 }
 main a:visited {
-    color: #b4c6dd;
+    color: #788697;
     text-decoration: none;
 }
 main a:hover {
-    color: #788697;
+    color: #b4c6dd;
     text-decoration: none;
 }
 main a:active {
-    color: #788697;
+    color: #b4c6dd;
     text-decoration: none;
 }
 
