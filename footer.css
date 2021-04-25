@@ -1,78 +1,82 @@
 .footer {
-  bottom: 0%;
-  width: 100%;
-  background-color: #3c7996;
-  color: #ffffff;
-  text-align: center;
-  display: flex;
+    bottom: 0%;
+    width: 100%;
+    background-color: #3c7996;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
 }
 .footerleft {
-  text-align: center;
+    text-align: center;
 }
 .title1 {
-  margin-top: 2%;
-  font-size: 2rem;
-  margin-bottom: 2%;
-  font-weight: 600;
+    margin-top: 2%;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-weight: 600;
 }
 .social {
-  position: center;
-  margin-top: 2%;
-  margin-bottom: 2%;
+    position: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .fl2 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 2%;
-  margin-bottom: 2%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .title2 {
-  margin-top: 2%;
-  font-size: 2rem;
-  margin-bottom: 2%;
-  font-weight: 600;
+    margin-top: 2%;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-weight: 600;
 }
 .footer a:link {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
 }
 .footer a:visited {
-  color: #ffffff;
-  text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
 }
 .footer a:hover {
-  color: #eef9fc;
-  text-decoration: none;
+    color: #eef9fc;
+    text-decoration: none;
 }
 .footer a:active {
-  color: #eef9fc;
-  text-decoration: none;
+    color: #eef9fc;
+    text-decoration: none;
 }
-
 .fl3 {
-  color: #ffffff;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 12%;
-  margin-bottom: 2%;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
 }
 .title3, .title4 {
-  margin-top: 2%;
-  font-size: 2rem;
-  margin-bottom: 2%;
-  font-weight: 600;
-  position: center;
+    margin-top: 2%;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    font-weight: 600;
 }
+@media screen and (max-width: 750px){
+    .fl3{
+      margin-top: 2%;
+      margin-bottom: 2%;
+    }
+}
+  
 .footer-end {
-  color: #ffffff;
-  background-color: #23607d;
-  left: 0%;
-  bottom: 0%;
-  width: 100%;
-  text-align: center;
-  z-index: 34;
-  font-size: 1.5 rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
+    color: #ffffff;
+    background-color: #23607d;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    z-index: 34;
+    font-size: 1.5 rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
