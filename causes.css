@@ -87,9 +87,10 @@ img {
   object-fit: cover;
 }
 
-.line-img {
+body .main-border {
   height: 3vh;
   width: 100%;
+  background: #b4c6dd;
 }
 
 .titles-h3 {
