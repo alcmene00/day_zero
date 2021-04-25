@@ -24,6 +24,10 @@ body {
   height: 10vh;
 }
 
+.mini-space{
+  height: 6vh;
+}
+
 .tears {
   text-align: center;
   display: flex;
@@ -52,6 +56,10 @@ img {
 
   .space {
     height: 5vh;
+  }
+
+  .mini-space{
+    height: 0vh;
   }
 }
 
