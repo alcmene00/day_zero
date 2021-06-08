@@ -58,7 +58,7 @@
       <div class="contact">
         <h1>Get in touch with us</h1>
         <div class="border"></div>
-        <form class="contact-form" action="contact.html" method="post">
+        <form class="contact-form" action="contact.php" method="post">
           <input type="text" class="contact-text" placeholder="Your E-mail" />
           <input type="text" class="contact-text" placeholder="Your Name" />
           <textarea
