@@ -1,89 +1,91 @@
 body {
-    background-color: white;
-    font-family: sans-serif;
-    overflow-x: hidden;
+  background-color: white;
+  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-.what-intro{
-    height: 85vh;
-    background: url(/pictures/hand.jpg);
-    background-size: cover;
-    background-position: 0% 50%;
-    background-position: center;
-
+.what-intro {
+  height: 85vh;
+  background: url(pictures/hand.jpg);
+  background-size: cover;
+  background-position: 0% 50%;
+  background-position: center;
 }
 
-.titles{
-    border-style: none none solid none;
-    border-bottom: 3px solid #b4c6dd;
-    font-size: 4rem;
-    text-transform: uppercase;
+.titles {
+  border-style: none none solid none;
+  border-bottom: 3px solid #b4c6dd;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
-h2{
-    text-align: center;
-    text-shadow: 2px 2px 5px grey;
-    font-size: 8rem;
+h2 {
+  text-align: center;
+  text-shadow: 2px 2px 5px grey;
+  font-size: 8rem;
 }
 
-h5{
-    font-size: 6em;
+h5 {
+  font-size: 6em;
 }
 
 .slider {
-    position: relative;
-    z-index: 2;
-    max-width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: 40px solid white;
-    border-top: 0px;
-    transition: all 0.5s ease;
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 40px solid white;
+  border-top: 0px;
+  transition: all 0.5s ease;
 }
 
 .slider .left-slide,
 .slider .right-slide {
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
 }
 
 .slider .left-slide {
-    left: -40px;
+  left: -40px;
 }
 
 .slider .right-slide {
-    right: -40px;
+  right: -40px;
 }
 
 .slider .slider-items .item img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 .slider .slider-items .item {
-    display: none;
+  display: none;
 }
 
 .slider .slider-items .item.active {
-    display: block;
+  display: block;
 }
 
-.slider a:link, .slider a:visited, .slider a:hover, .slider a:active{
-    color:#000000;
-    text-decoration: none;
-    text-shadow: 2px 2px 5px grey;
+.slider a:link,
+.slider a:visited,
+.slider a:hover,
+.slider a:active {
+  color: #000000;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px grey;
 }
 .caption {
-    text-align: center;
-    font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.8rem;
 }

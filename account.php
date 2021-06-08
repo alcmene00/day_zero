@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/menu.css" />
-    <link rel="stylesheet" href="/account.css" />
-    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="account.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,30 +19,29 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="icon" href="/pictures/dayzero-drop-nobg.png" />
+    <link rel="icon" href="pictures/dayzero-drop-nobg.png" />
 
     <title>Day Zero - Account</title>
   </head>
   <body>
     <nav>
       <div class="logo">
-        <a href="/index.html">
-          <img src="/pictures/dayzero-alt2-1.png" alt="logo" width="200rem" />
+        <a href="index.php">
+          <img src="pictures/dayzero-alt2-1.png" alt="logo" width="200rem" />
         </a>
       </div>
 
-      
       <!-- MENU -->
-      
+
       <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/causes.html">Causes</a></li>
-        <li><a href="/effects.html">Effects</a></li>
-        <li><a href="/whatishappening.html">What is happening</a></li>
-        <li><a href="/account.html">Account</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="causes.php">Causes</a></li>
+        <li><a href="effects.php">Effects</a></li>
+        <li><a href="whatishappening.php">What is happening</a></li>
+        <li><a href="account.php">Account</a></li>
         <li>
-          <a href="/search.html">
-            <img src="/pictures/search-icon.png" alt="search" width="25px" />
+          <a href="search.php">
+            <img src="pictures/search-icon.png" alt="search" width="25px" />
           </a>
         </li>
       </ul>
@@ -52,8 +51,8 @@
         <div class="line3"></div>
       </div>
     </nav>
-    
-   <!-- MAIN -->
+
+    <!-- MAIN -->
 
     <main class="account-background">
       <div class="container pt-5">
@@ -62,9 +61,8 @@
         </div>
         <div class="row">
           <div class="col-md-5">
-            
             <!-- SIGN UP -->
-            
+
             <div class="shadow-lg p-4 mb-4 bg-white rounded">
               <h2>Sign Up</h2>
               <p><br /></p>
@@ -101,9 +99,8 @@
           </div>
           <div class="col-md-5">
             <div class="shadow-lg p-4 mb-4 bg-white rounded">
-              
               <!-- LOG IN -->
-              
+
               <h2>Log In</h2>
               <p><br /></p>
               <div class="form-group">
@@ -145,9 +142,9 @@
         </div>
       </div>
     </main>
-    
+
     <!-- FOOTER -->
-    
+
     <footer>
       <div class="footer">
         <div class="row">
@@ -175,19 +172,19 @@
               <h3 class="title2">Overview</h3>
               <div class="mini-menu">
                 <ul class="list-unstyled mb-0">
-                  <li><a href="/index.html">Home</a></li>
-                  <li><a href="/causes.html">Causes</a></li>
-                  <li><a href="/effects.html">Effects</a></li>
-                  <li><a href="/whatishappening.html">What is happening</a></li>
-                  <li><a href="/account.html">Log in/ Sign up</a></li>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="causes.php">Causes</a></li>
+                  <li><a href="effects.php">Effects</a></li>
+                  <li><a href="whatishappening.php">What is happening</a></li>
+                  <li><a href="account.php">Log in/ Sign up</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-sm">
             <div class="fl3">
-              <h3 class="title3"><a href="/references.html">References</a></h3>
-              <h3 class="title4"><a href="/contact.html">Contact Form</a></h3>
+              <h3 class="title3"><a href="references.php">References</a></h3>
+              <h3 class="title4"><a href="contact.php">Contact Form</a></h3>
             </div>
           </div>
         </div>

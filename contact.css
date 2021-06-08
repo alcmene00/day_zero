@@ -1,91 +1,90 @@
 html {
-    font-size: 62.5%;
-  }
-  
+  font-size: 62.5%;
+}
+
 body {
-    overflow-x: hidden;
-    font-family: var(--bs-font-sans-serif);
+  overflow-x: hidden;
+  font-family: var(--bs-font-sans-serif);
 }
-  
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.contact{
-    background: url(/pictures/contact-bg.jpg) no-repeat center;
-    background-size: cover;
-    padding: 40px 0;
-    height: 100vh;
+.contact {
+  background: url(pictures/contact-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+  height: 100vh;
 }
 
-.contact h1{
-    margin-top: 5%;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 5rem;
-    font-weight: 600;
+.contact h1 {
+  margin-top: 5%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 750px){
-    .contact h1{
-        font-size: 4rem;
-        margin-top: 2%;
-    }
+@media screen and (max-width: 750px) {
+  .contact h1 {
+    font-size: 4rem;
+    margin-top: 2%;
+  }
 }
 
-.contact .border{
-    width: 100px;
-    height: 10px;
-    background: rgb(255, 255, 255);
-    margin: 40px auto;
+.contact .border {
+  width: 100px;
+  height: 10px;
+  background: rgb(255, 255, 255);
+  margin: 40px auto;
 }
 
-.contact-form{
-    max-width: 600px;
-    margin: auto;
-    padding: 0 10px;
-    overflow: hidden;
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
-.contact-text{
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 16px 0;
-    border: 0;
-    background: #fff;
-    padding: 20px 40px;
-    outline: none;
-    color: rgb(50, 83, 110);
-    transition: 0.5s;
-    font-size: 1.8rem;
+.contact-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #fff;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(50, 83, 110);
+  transition: 0.5s;
+  font-size: 1.8rem;
 }
 
-.contact-text:focus{
-    box-shadow: 0 0 10px 4px #34495e;
+.contact-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
 }
 
-textarea .contact-text{
-    resize: none;
-    height: 140px;
+textarea .contact-text {
+  resize: none;
+  height: 140px;
 }
 
-.contact-button{
-    float: right;
-    border: 0;
-    background: rgb(3, 3, 3);
-    color: rgb(255, 255, 255);
-    padding: 12px 50px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 1.5rem;
-    margin-bottom: 5%;
+.contact-button {
+  float: right;
+  border: 0;
+  background: rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
 }
 
-.contact-button:hover{
-    background: rgb(69, 123, 167);
-
+.contact-button:hover {
+  background: rgb(69, 123, 167);
 }

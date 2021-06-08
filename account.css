@@ -1,45 +1,45 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .account-background {
-    height: 85vh;
-    background-image: url(/pictures/kai-dahms-FB_xKJOLsfI-unsplash.jpg);
-    background-size: cover;
-    background-position: 0% 45%;
+  height: 85vh;
+  background-image: url(pictures/kai-dahms-FB_xKJOLsfI-unsplash.jpg);
+  background-size: cover;
+  background-position: 0% 45%;
 }
 
 h1 {
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-    font-size: 8rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+  font-size: 8rem;
 }
 
 p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 h2 {
-    text-align: center;
-    border-style: none none solid none;
-    border-bottom: 3px solid #b4c6dd;
-    text-shadow: 2px 2px 5px grey;
-    font-size: 8rem;
+  text-align: center;
+  border-style: none none solid none;
+  border-bottom: 3px solid #b4c6dd;
+  text-shadow: 2px 2px 5px grey;
+  font-size: 8rem;
 }
 
-.form-group{
-    font-size: 1.6rem;
+.form-group {
+  font-size: 1.6rem;
 }
 
-.intro{
-    padding: 30px;
+.intro {
+  padding: 30px;
 }
 
 main {
-    min-height: 100vh;
+  min-height: 100vh;
 }
