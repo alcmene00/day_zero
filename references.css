@@ -1,76 +1,86 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-  
+
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-  
+
 body {
-    overflow-x: hidden;
-    font-family: var(--bs-font-sans-serif);
+  overflow-x: hidden;
+  font-family: var(--bs-font-sans-serif);
+}
+
+main {
+  font-size: 1.8rem;
 }
 
 main .ref-title {
-    font-size: 5rem;
-    margin-top: 5%;
-    margin-bottom: 3%;
-    border-style: none none solid none;
-    border-bottom: 5px solid #b4c6dd;
-    width: 28%;
-    text-transform: uppercase;
+  font-size: 5rem;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  border-style: none none solid none;
+  border-bottom: 5px solid #b4c6dd;
+  width: 28%;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 750px) {
-    main .ref-title{
-        width: 100%;
-        text-align: center;
-    }
-    main .ref-home, main .ref-causes, main .ref-effects, main .ref-what{
-        text-align: center;
-    }
+  main .ref-title {
+    width: 100%;
+    text-align: center;
+  }
+  main .ref-home,
+  main .ref-causes,
+  main .ref-effects,
+  main .ref-what {
+    text-align: center;
+  }
 }
 
 main a:link {
-    color: #788697;
-    text-decoration: none;
+  color: #788697;
+  text-decoration: none;
 }
 main a:visited {
-    color: #788697;
-    text-decoration: none;
+  color: #788697;
+  text-decoration: none;
 }
 main a:hover {
-    color: #b4c6dd;
-    text-decoration: none;
+  color: #b4c6dd;
+  text-decoration: none;
 }
 main a:active {
-    color: #b4c6dd;
-    text-decoration: none;
+  color: #b4c6dd;
+  text-decoration: none;
 }
 
-main .ref-home, main .ref-causes, main .ref-effects, main .ref-what{
-    font-size: 3.5rem;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-transform: uppercase;
+main .ref-home,
+main .ref-causes,
+main .ref-effects,
+main .ref-what {
+  font-size: 3.5rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
 }
 
-ul {
-    list-style-image: url('/pictures/drop-list.png');
-    margin-bottom: 2%;
-  }
+main ul {
+  list-style-image: url("pictures/drop-list.png");
+  margin-bottom: 2%;
+}
 
-main .sources{
-    margin-bottom: 2%;
+main .sources {
+  margin-bottom: 2%;
 }
-main{
-    margin-bottom: 2%;
+main {
+  margin-bottom: 2%;
 }
-main .border{
-    position: relative;
-    width: 100%;
-    left: 0%;
-    height: 5px;
-    background-color:#bcd6e6;
+main .border {
+  position: relative;
+  width: 100%;
+  left: 0%;
+  height: 5px;
+  background-color: #bcd6e6;
 }

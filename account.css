@@ -7,7 +7,7 @@ body {
 }
 
 .account-background {
-  height: 85vh;
+  min-height: 85vh;
   background-image: url(pictures/kai-dahms-FB_xKJOLsfI-unsplash.jpg);
   background-size: cover;
   background-position: 0% 45%;
@@ -17,7 +17,7 @@ h1 {
   color: white;
   text-align: center;
   text-shadow: 2px 2px 5px black;
-  font-size: 8rem;
+  font-size: 3rem;
 }
 
 p {
@@ -29,7 +29,7 @@ h2 {
   border-style: none none solid none;
   border-bottom: 3px solid #b4c6dd;
   text-shadow: 2px 2px 5px grey;
-  font-size: 8rem;
+  font-size: 3rem;
 }
 
 .form-group {
