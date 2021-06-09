@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    include_once 'head.php'
+    include_once 'head.php';
   ?>
   <head>
     <link rel="stylesheet" href="account.css" />
     <title>Day Zero - Account</title>
   </head>
   <?php 
-    include_once 'menu.php'
+    include_once 'menu.php';
   ?>
   <body>
     <!-- MAIN -->

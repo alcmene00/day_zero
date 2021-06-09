@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    include_once 'head.php'
+    include_once 'head.php';
   ?>
   <head>
     <link rel="stylesheet" href="home.css" />
@@ -20,7 +20,7 @@
     <div class="intro-home"></div>
     
     <?php 
-      include_once 'menu.php'
+      include_once 'menu.php';
     ?>
     
   <!-- MAIN -->

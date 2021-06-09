@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php 
-    include_once 'head.php'
+    include_once 'head.php';
   ?>
   <head>
     <link rel="stylesheet" href="causes.css" />
     <title>Day Zero - Causes</title>
   </head>
   <?php 
-    include_once 'menu.php'
+    include_once 'menu.php';
   ?>
   
     <!-- H E A D  T I T L E -->
@@ -207,7 +207,7 @@
 
     <!-- F O O T E R -->
     <?php 
-      include_once 'footer.php'
+      include_once 'footer.php';
     ?>
 
     <script src="menu.js"></script>

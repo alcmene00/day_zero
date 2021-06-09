@@ -8,7 +8,7 @@
     <title>Day Zero - Search</title>
   </head>
   <?php 
-      include_once 'menu.php'
+      include_once 'menu.php';
   ?>
   <body>
     <!-- MAIN -->

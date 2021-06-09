@@ -8,7 +8,7 @@
     <title>Day Zero - What is happening</title>
   </head>
   <?php 
-      include_once 'menu.php'
+      include_once 'menu.php';
   ?>
   <body>
     <div class="what-intro"></div>
