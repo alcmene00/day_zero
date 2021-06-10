@@ -12,14 +12,17 @@
   ?>
   <body>
     <!-- MAIN -->
+
     <main class="background-search">
-      <div class="search">
-        <h3>What are you looking for?</h3>
-        <div class="search-box">
-          <input type="text" name="box" placeholder="Search" />
-          <img src="pictures/search-icon.png" alt="search" width="40px" />
-        </div>
-      </div>
+      <form  class="search" action="search_results.php" method="POST">
+          <h3>What are you looking for?</h3>
+          <div class="search-box">
+            <input type="text" name="search" placeholder="Search" />
+       <!--     <input name="submit-search" type="submit" type="image" src="pictures/search-icon.png"  alt="search" width="40px"/>-->
+           <button type="submit" name="submit-search">search</button>
+          <!-- <img src="pictures/search-icon.png" alt="search" width="40px" />-->
+          </div>
+        </form>
     </main>
     <!-- FOOTER -->
     <?php 

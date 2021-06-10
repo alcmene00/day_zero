@@ -16,3 +16,7 @@
 
   <link rel="icon" href="pictures/dayzero-drop-nobg.png" />
 </head>
+
+<?php
+    include "dbh.php";
+?>
