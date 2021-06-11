@@ -26,20 +26,19 @@
           <img class="tear" src="pictures/drop-economical-reverse.png" />
         </a>
       </div>
-      <div id = "natural"></id></div>
+      <div id = "natural"></div>
     </div>
 
     <!-- N A T U R A L  C A U S E S -->
 
-    <div class="mini-space">
-    </div>
+    <div class="mini-space"></div>
     <h3 class="titles-h3">Natural<br />Causes</h3>
     <img class="text-img" src="pictures/1.-scaled.jpg" />
 
     <div class="container pt-5">
       <div class="row">
         <div class="col-md-6">
-          <h4 class="titles-h4">Drought</h4>
+          <h4 class="titles-h4" id="drought">Drought</h4>
           <p class="text">
             A drought is, in short, an area especially hot and dry, which is not
             getting enough rainfall to be able to sustain the life that is
@@ -52,7 +51,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <h4 class="titles-h4">Distance</h4>
+          <h4 class="titles-h4" id = "distance">Distance</h4>
           <p class="text">
             There are a number of remote areas throughout the entire world that
             deal with water scarcity because they just aren’t close to anywhere
@@ -65,7 +64,7 @@
 
       <div class="row">
         <div class="col-md-6">
-          <h4 class="titles-h4">Natural<br />Disasters</h4>
+          <h4 class="titles-h4" id="natural-disasters">Natural<br />Disasters</h4>
           <p class="text">
             Natural disasters like tsunamis, floods may also cause severe water
             shortages for the local population since important public
@@ -77,7 +76,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <h4 class="titles-h4">Rare<br />Fresh-Water</h4>
+          <h4 class="titles-h4" id="rare-fresh-water">Rare<br />Fresh-Water</h4>
           <p class="text">
             Water covers 70% of our planet, and it is easy to think that it will
             always be plentiful. However, freshwater—the stuff we drink, bathe
@@ -102,7 +101,7 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-md-6">
-          <h4 class="titles-h4">Growing<br />Population</h4>
+          <h4 class="titles-h4" id="growing-population">Growing<br />Population</h4>
           <p class="text">
             The first reason that is causing water stress around the world is
             the growing human population at the same time as the water supply
@@ -112,7 +111,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <h4 class="titles-h4">Global<br />Warming</h4>
+          <h4 class="titles-h4" id="global-warming">Global<br />Warming</h4>
           <p class="text">
             Global warming is another important cause of water scarcity. When
             our average air temperature becomes warmer, water from rivers and
@@ -126,7 +125,7 @@
 
       <div class="row">
         <div class="col-md-6">
-          <h4 class="titles-h4">Pollution</h4>
+          <h4 class="titles-h4" id="pollution">Pollution</h4>
           <p class="text">
             Water pollution is a huge problem, especially when you’re looking at
             areas that don’t necessarily have a good sewage system. Pollution
@@ -136,7 +135,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <h4 class="titles-h4">Overuse</h4>
+          <h4 class="titles-h4" id="overuse">Overuse</h4>
           <p class="text">
             Water overuse is a huge issue that a lot of people are dealing with.
             It may be overused on people, animals, land, or any other number of
@@ -160,7 +159,7 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-md-6">
-          <h4 class="titles-h4">Industries</h4>
+          <h4 class="titles-h4" id="industries">Industries</h4>
           <p class="text">
             Water use has grown at more than twice the rate of the human
             population over the last century in part due to industries, such as
@@ -168,7 +167,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <h4 class="titles-h4">Conflict</h4>
+          <h4 class="titles-h4" id="conflict">Conflict</h4>
           <p class="text">
             If there is conflict over an area of land, it may be difficult to
             access the water that is located there. It may lead to the
@@ -182,7 +181,7 @@
 
       <div class="row">
         <div class="col-md-6">
-          <h4 class="titles-h4">Illegal<br />Dumping</h4>
+          <h4 class="titles-h4" id="illegal-dumping">Illegal<br />Dumping</h4>
           <p class="text">
             Illegal dumping is another significant reason for water shortages.
             Industries frequently dispose of their industrial garbage into
@@ -193,7 +192,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <h4 class="titles-h4">Governmental<br />Access</h4>
+          <h4 class="titles-h4" id="governmental-access">Governmental<br />Access</h4>
           <p class="text">
             In some countries, specifically those with dictatorships, the use of
             water may be strictly controlled by those in power, causing a

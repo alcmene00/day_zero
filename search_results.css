@@ -1,3 +1,7 @@
+form {
+  padding: 2%;
+}
+
 .background-search {
   min-height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -6,22 +10,39 @@
   background-position: 0% 45%;
 }
 
+.result {
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.results-container h2 {
+  font-size: 2.5rem;
+}
+
+.results-container p {
+  font-size: 2rem;
+}
+
+.results-container h2,
+p {
+  color: white;
+}
+
 .search {
-  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .search h3 {
-  color: white;
+  color: black;
   margin: 30px;
   font-size: 5rem;
   text-align: center;
 }
 
 input {
-  font-size: 2.5rem;
+  font-size: 2rem;
   border: none;
 }
 

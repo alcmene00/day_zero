@@ -1,11 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  overflow-x: hidden;
-}
-
 .account-background {
   min-height: 85vh;
   background-image: url(pictures/kai-dahms-FB_xKJOLsfI-unsplash.jpg);

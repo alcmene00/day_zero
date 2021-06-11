@@ -34,7 +34,7 @@
       </div>
 
       <div class="col-md-6">
-        <h2 class="title">
+        <h2 class="title" id="intro">
         water, the first principle of everything.
         <div class ="border"></div>
         </h2>
@@ -58,7 +58,7 @@
   <div class="recommendations">
     <div class="container pt-5">
       <div class ="border"></div>
-      <h2 class="whatyoucan">What you can do</h2>
+      <h2 class="whatyoucan" id="what-you-can-do">What you can do</h2>
       <div class="row">
          <div class="col-sm">
            <img class="waterplants" src="pictures/waterplants.png">

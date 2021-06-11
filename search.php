@@ -5,6 +5,7 @@
   ?>
   <head>
     <link rel="stylesheet" href="search.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Day Zero - Search</title>
   </head>
   <?php 
@@ -18,9 +19,7 @@
           <h3>What are you looking for?</h3>
           <div class="search-box">
             <input type="text" name="search" placeholder="Search" />
-       <!--     <input name="submit-search" type="submit" type="image" src="pictures/search-icon.png"  alt="search" width="40px"/>-->
-           <button type="submit" name="submit-search">search</button>
-          <!-- <img src="pictures/search-icon.png" alt="search" width="40px" />-->
+            <button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
           </div>
         </form>
     </main>

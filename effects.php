@@ -17,15 +17,15 @@
     <main>
       <h2 class="title">Effects</h2>
       <div class="slider">
-        <div class="slider-items">
+        <div class="slider-items" id="active">
           <div class="item active">
             <img
               src="https://medwet.org/wp-content/uploads/2019/01/Climate-change_credit_Mailis_Renaudin-e1548248327233.jpg"
               class="img-fluid"
               alt="picture1"
             />
-            <div class="caption">
-              <h3>DISAPPEARING WETLANDS</h3>
+            <div class="caption" >
+              <h3 id="wetlands">DISAPPEARING WETLANDS</h3>
               <p>
                 Wetlands, the most economically valuable and among the most
                 biodiverse ecosystems in the world, are disappearing three times
@@ -49,7 +49,7 @@
               alt="picture1"
             />
             <div class="caption">
-              <h3>DAMAGED ECOSYSTEMS</h3>
+              <h3 id="ecosystems">DAMAGED ECOSYSTEMS</h3>
               <p>
                 When water becomes scarce, natural landscapes often become the
                 victims. As an example, the Aral Sea in central Asia was once
@@ -73,7 +73,7 @@
               alt="picture1"
             />
             <div class="caption">
-              <h3>BILLIONS OF PEOPLE LACK WATER</h3>
+              <h3 id="lack">BILLIONS OF PEOPLE LACK WATER</h3>
               <p>
                 According to the Food and Agricultural Organization (FAO) of the
                 United Nations, around 1.2 billion people live in areas of
@@ -98,7 +98,7 @@
               alt="picture1"
             />
             <div class="caption">
-              <h3>INCREASED GLOBAL CONFLICT</h3>
+              <h3 id="global-conflict">INCREASED GLOBAL CONFLICT</h3>
               <p>
                 As water quality degrades or the quantity available has to meet
                 rising demands over time, competition among water users
@@ -118,7 +118,7 @@
               alt="picture1"
             />
             <div class="caption">
-              <h3>FOOD SHORTAGES</h3>
+              <h3 id="food-shortages">FOOD SHORTAGES</h3>
               <p>
                 Water scarcity may limit food production and supply, putting
                 pressure on food prices and increasing countries’ dependence on

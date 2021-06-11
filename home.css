@@ -3,13 +3,8 @@ nav {
   position: sticky;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   overflow-x: hidden;
-  font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -23,8 +18,8 @@ body {
   background-position: 20% 40%;
 }
 
-header::after{
-  content: '';
+header::after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -35,8 +30,8 @@ header::after{
   mix-blend-mode: color;
 }
 
-.main-intro .drops{
-  margin: 0 0 0 0px; 
+.main-intro .drops {
+  margin: 0 0 0 0px;
   position: absolute;
   bottom: 0;
   width: 1000px;
@@ -44,7 +39,7 @@ header::after{
   z-index: 19;
 }
 
-.main-intro .basic{
+.main-intro .basic {
   position: absolute;
   width: 1903px;
   bottom: 0;
@@ -52,7 +47,7 @@ header::after{
   z-index: 18;
 }
 
-.main-intro .upwater{
+.main-intro .upwater {
   position: absolute;
   width: 1600px;
   bottom: 150px;
@@ -63,14 +58,13 @@ header::after{
 main {
   font-size: 1.8rem;
 }
- 
 
-.title{
+.title {
   margin-bottom: 3%;
   margin-top: 5%;
   color: black;
-  font-size:4rem;
-  text-align:center;
+  font-size: 4rem;
+  text-align: center;
   position: relative;
   top: 100px;
   padding-bottom: 0%;
@@ -79,17 +73,17 @@ main {
   margin-right: 2%;
 }
 
-.border{
+.border {
   position: absolute;
   width: 96%;
   height: 5px;
-  background-color:#bcd6e6;
+  background-color: #bcd6e6;
   bottom: 3;
   left: 2%;
   right: 10%;
 }
 
-.text{
+.text {
   top: 100px;
   padding-top: 2%;
   padding-right: 4%;
@@ -107,7 +101,7 @@ main {
   margin-bottom: 320px;
 }
 
-.waterdrop{
+.waterdrop {
   width: 80%;
   margin-top: 10%;
   margin-bottom: 5%;
@@ -115,31 +109,31 @@ main {
   position: sticky;
   top: 20%;
   z-index: 2;
-  margin-left:10%;
+  margin-left: 10%;
 }
 
-.recommendations{
+.recommendations {
   position: relative;
   display: flex;
 }
-.recommendations .waterplants{
+.recommendations .waterplants {
   width: 100%;
   position: relative;
 }
 
-.whatyoucan{
+.whatyoucan {
   margin-top: 5%;
   margin-bottom: 2%;
   color: black;
-  font-size:4rem;
-  text-align:center;
+  font-size: 4rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
-.recommendations .rec{
-  text-align:center;
+.recommendations .rec {
+  text-align: center;
   text-transform: uppercase;
   color: black;
-  font-size:1.8rem;
+  font-size: 1.8rem;
   margin-bottom: 10%;
 }

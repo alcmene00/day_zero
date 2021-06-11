@@ -20,7 +20,7 @@
             
             <!-- CAPE TOWN -->
             
-            <h3 class="titles">Cape Town - South Africa</h3>
+            <h3 class="titles" id="Cape-Town">Cape Town - South Africa</h3>
             <p>
               <br />
               The Cape Town water crisis in South Africa was a period of severe
@@ -91,7 +91,7 @@
             
             <!-- CHENNAI -->
             
-            <h3 class="titles">Chennai - India</h3>
+            <h3 class="titles" id="Chennai">Chennai - India</h3>
             <p>
               Chennai, with a population of nearly 11 million, has no perennial
               rivers to supply its water. The city is dependent on the
@@ -174,7 +174,7 @@
             
             <!-- YEMEN -->
             
-            <h3 class="titles">Yemen - Western Asia</h3>
+            <h3 class="titles" id="Yemen">Yemen - Western Asia</h3>
             <p>
               The Yemeni Civil War has led to tens of thousands of deaths, but
               the international community is just starting to appreciate the
