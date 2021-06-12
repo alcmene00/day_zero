@@ -9,6 +9,7 @@
   </head>
   <body>
 
+
     <header>
     <div class="main-intro">
       <img src="pictures/home/mainlayer.png" class="basic translate" data-speed="-0.25"  alt="">
@@ -18,10 +19,12 @@
     </header >
 
     <div class="intro-home"></div>
+   
     
     <?php 
       include_once 'menu.php';
     ?>
+    
     
   <!-- MAIN -->
 

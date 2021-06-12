@@ -14,6 +14,7 @@
   <?php 
       include_once 'menu.php';
   ?>
+  
 
   <body>
     <!-- MAIN -->
@@ -21,7 +22,7 @@
 
       <form  class="search" action="search_results.php" method="POST">
           <div class="search-box">
-            <input type="text" name="search" placeholder="SEARCH" />
+            <input type="text" name="search" placeholder="SEARCH RESULTS" />
             <button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
           </div>
       </form>

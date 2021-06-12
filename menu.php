@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" href="menu.css" />
 </head>
-<nav>
+<nav id="navbar">
   <div class="logo">
     <a href="index.php"
       ><img src="pictures/dayzero-alt2-1.png" alt="logo" width="200rem"
