@@ -9,22 +9,20 @@
   </head>
   <body>
 
-
     <header>
     <div class="main-intro">
-      <img src="pictures/home/mainlayer.png" class="basic translate" data-speed="-0.25"  alt="">
-      <img src="pictures/home/Layer 1.png" class="upwater translate" data-speed="-0.2" alt="">
-      <img src="pictures/home/Layer 2.png" class="drops translate" data-speed="0.3" alt="">
+      <img src="pictures/home/title.png" class="title" data-speed="0.3" alt="">
+      <img src="pictures/home/mainlayer.png" class="basic" data-speed="-0.25"  alt="">
+      <img src="pictures/home/Layer 1.png" class="upwater" data-speed="-0.2" alt="">
+      <img src="pictures/home/Layer 2.png" class="drops" data-speed="0.3" alt="">
     </div>  
     </header >
 
     <div class="intro-home"></div>
-   
     
     <?php 
       include_once 'menu.php';
     ?>
-    
     
   <!-- MAIN -->
 
