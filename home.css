@@ -10,68 +10,84 @@ nav {
   position: sticky;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   overflow-x: hidden;
+  font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
 }
 
-.intro-home {
+.intro-home{
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 8, 37, 0.226));
   background-size: cover;
   background-position: 20% 40%;
 }
 
-header::after {
-  content: "";
+header::after{
+  content: '';
   position: absolute;
+  overflow: visible;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.05);
-  z-index: 20;
+  background-color: rgba(45, 83, 165, 0.05);
   mix-blend-mode: color;
 }
 
-.main-intro .drops {
-  margin: 0 0 0 0px;
+.main-intro .title{
+  margin: 0 0 0 0px; 
+  position: absolute;
+  top: 38%;
+  width: 60%;
+  left: 20%;
+  right: 20%;
+  z-index: 2;
+}
+
+.main-intro .drops{
+  margin: 0 0 0 0px; 
   position: absolute;
   bottom: 0;
   width: 1000px;
   right: 0;
-  z-index: 19;
+  z-index: 1;
 }
 
-.main-intro .basic {
+.main-intro .basic{
   position: absolute;
   width: 1903px;
   bottom: 0;
   left: 0;
-  z-index: 18;
+  z-index: -1;
 }
 
-.main-intro .upwater {
+.main-intro .upwater{
   position: absolute;
   width: 1600px;
-  bottom: 150px;
+  top: 0;;
   left: 0;
-  z-index: 20;
+  z-index: 0;
 }
 
 main {
   font-size: 1.8rem;
+  
 }
 
-.title {
+.title{
   margin-bottom: 3%;
   margin-top: 5%;
   color: black;
-  font-size: 4rem;
-  text-align: center;
+  font-size:4rem;
+  text-align:center;
   position: relative;
   top: 100px;
   padding-bottom: 0%;
@@ -80,17 +96,17 @@ main {
   margin-right: 2%;
 }
 
-.border {
+.border{
   position: absolute;
   width: 96%;
   height: 5px;
-  background-color: #bcd6e6;
+  background-color:#bcd6e6;
   bottom: 3;
   left: 2%;
   right: 10%;
 }
 
-.text {
+.text{
   top: 100px;
   padding-top: 2%;
   padding-right: 4%;
@@ -108,7 +124,7 @@ main {
   margin-bottom: 320px;
 }
 
-.waterdrop {
+.waterdrop{
   width: 80%;
   margin-top: 10%;
   margin-bottom: 5%;
@@ -116,31 +132,31 @@ main {
   position: sticky;
   top: 20%;
   z-index: 2;
-  margin-left: 10%;
+  margin-left:10%;
 }
 
-.recommendations {
+.recommendations{
   position: relative;
   display: flex;
 }
-.recommendations .waterplants {
+.recommendations .waterplants{
   width: 100%;
   position: relative;
 }
 
-.whatyoucan {
+.whatyoucan{
   margin-top: 5%;
   margin-bottom: 2%;
   color: black;
-  font-size: 4rem;
-  text-align: center;
+  font-size:4rem;
+  text-align:center;
   text-transform: uppercase;
 }
 
-.recommendations .rec {
-  text-align: center;
+.recommendations .rec{
+  text-align:center;
   text-transform: uppercase;
   color: black;
-  font-size: 1.8rem;
+  font-size:1.8rem;
   margin-bottom: 10%;
 }
