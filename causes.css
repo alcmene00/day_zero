@@ -1,6 +1,6 @@
 .title-img {
   background-size: cover;
-  background-position: 20% 40%;
+  background-position: 0% 50%;  
   min-height: 85vh;
   background-image: url("https://www.futurewater.eu/wp-content/uploads/2020/06/Waterschaarste.jpg");
 }
@@ -20,8 +20,10 @@
 }
 
 .tear {
-  padding: 15%;
-  height: 60vh;
+  padding: 5%;
+  margin: 0 0 0 0px;
+  max-height: 65vh;
+  max-width: 100%;
 }
 
 img {
@@ -35,12 +37,13 @@ img {
   }
 
   .tear {
-    padding: 0%;
-    height: 34vh;
+    padding-top: 10%;
+    max-height: 40vh;
+    max-width: 48%;
   }
 
   .space {
-    height: 5vh;
+    height: 3vh;
   }
 
   .mini-space {
