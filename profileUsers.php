@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
-  <?php 
+<?php 
   include_once 'head.php';
-  ?>
+?>
 
 <head>
-  <title>Day Zero - Account</title>
+  <title>Day Zero - Profile</title>
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/sco.js/1.1.0/css/scojs.min.css'><link rel="stylesheet" href="./profileUsers.css">
+  <link rel="stylesheet" href="./profileUsers.css">
 
 </head>
 
@@ -16,17 +16,13 @@
   include_once 'menu.php';
 ?>
 
-<body>
-  
-  
 
-  
-  
-  
-  
+
+<body>
 
 
 <div class="space"></div>
+
   
 <!-- profile - bubble - image -->
 
@@ -42,7 +38,9 @@
   </div>
 </div>
 
+
 <div class="space"></div>
+
 
 
 
@@ -101,25 +99,35 @@
     </div>
   </div>
 
+  <!-- log out -->
 
-
-
-  <!-- LOG OUT -->
-
-  <div>
-    <input id="submit" type="submit" value="Log Out">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="logout">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#logout" aria-expanded="false" aria-controls="logout">
+          <div class="title btn btn-danger btn-outline btn-lg">Log Out</div>
+        </a>
+      </h4>
+    </div>
   </div>
 
 
 
+
+
+
+
 </div>
+
 
 <!-- F O O T E R -->
 <?php 
 include_once 'footer.php';
 ?>
 
-<!-- scripts -->
+
+
+<!-- script -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
 </body>

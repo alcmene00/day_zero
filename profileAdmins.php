@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" >
 
-  <?php 
+<?php 
   include_once 'head.php';
-  ?>
+?>
 
 <head>
-  <title>Day Zero - Account</title>
+  <title>Day Zero - Profile</title>
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/sco.js/1.1.0/css/scojs.min.css'><link rel="stylesheet" href="./profileAdmins.css">
+  <link rel="stylesheet" href="./profileAdmins.css">
 
 </head>
+
+<?php 
+  include_once 'menu.php';
+?>
+
+
+
 <body>
 
-  
-  <?php 
-  include_once 'menu.php';
-  ?>
-  
-  
 
-  
-  
-  
- 
 <div class="space"></div>
+
   
 <!-- profile - bubble - image -->
 
@@ -67,7 +65,7 @@
       </div>
     </div>
   </div>
- 
+
   
   
   
@@ -140,17 +138,17 @@
 
 
 
-  <!-- forth panel - deleting user -->
+  <!-- fourth panel - deleting user -->
 
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFor">
+    <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFor" aria-expanded="false" aria-controls="collapseFor">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           <div class="title btn btn-danger btn-outline btn-lg">Delete A User</div>
         </a>
       </h4>
     </div>
-    <div id="collapseFor" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFor">
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
 
         
@@ -171,11 +169,21 @@
 
 
 
-  <!-- LOG OUT -->
 
-  <div>
-    <input id="submit" type="submit" value="Log Out">
+
+  <!-- log out -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="logout">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#logout" aria-expanded="false" aria-controls="logout">
+          <div class="title btn btn-danger btn-outline btn-lg">Log Out</div>
+        </a>
+      </h4>
+    </div>
   </div>
+
+  
 
 
 
@@ -190,7 +198,8 @@ include_once 'footer.php';
 ?>
 
 
-<!-- scripts -->
+
+<!-- script -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
 </body>
