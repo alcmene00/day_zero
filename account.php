@@ -24,78 +24,77 @@
 
             <div class="shadow-lg p-4 mb-4 bg-white rounded">
               <h2>Sign Up</h2>
-              <p><br /></p>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  class="form-control form-control-lg"
-                  id="email_signup"
-                  placeholder="Enter email"
-                  name="email"
-                />
-              </div>
-              <p><br /></p>
-              <div class="form-group">
-                <label for="pwd_signup">Password:</label>
-                <input
-                  type="password"
-                  class="form-control form-control-lg"
-                  id="pwd"
-                  placeholder="Enter password"
-                  name="pswd"
-                />
-              </div>
-              <p><br /></p>
+              <p><br/></p>
+              
+              <form class="form-group" action="includes/signup.inc.php" method="post">
+              <label for="email">Email:</label>
+              <p></p>
+              <input type="email" name="email" placeholder="Email...">
+              <p><br/></p>
+              <label for="pwd_signup">Password:</label>
+              <p></p>
+              <input type="password" name="pwd" placeholder="Password...">
+              <p><br/></p>
+              <button type="submit" name="submit" class="btn btn-dark btn-lg">Sign Up</button>
+              </form>
 
-              <button type="submit" class="btn btn-dark btn-lg">Sign Up</button>
+              <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in all the fields</p>";
+                }
+                else if ($_GET["error"] == "invalidemail"){
+                    echo "<p>Your email is wrong.</p>";
+                }
+                else if ($_GET["error"] == "stmtfailed"){
+                  echo "<p>Something went wrong.</p>";
+                }
+                else if ($_GET["error"] == "none"){
+                  echo "<p>Signing up was successful!</p>";
+                }
+              }
+              ?>
+
             </div>
+            <p><br/></p>
           </div>
+
           <div class="col-md-2">
             <div class="mx-5 p-4">
               <h1><strong>OR</strong></h1>
             </div>
           </div>
+
           <div class="col-md-5">
             <div class="shadow-lg p-4 mb-4 bg-white rounded">
               <!-- LOG IN -->
 
               <h2>Log In</h2>
-              <p><br /></p>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  class="form-control form-control-lg"
-                  id="email_login"
-                  placeholder="Enter email"
-                  name="email"
-                />
-              </div>
-              <p><br /></p>
-              <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input
-                  type="password"
-                  class="form-control form-control-lg"
-                  id="pwd_login"
-                  placeholder="Enter password"
-                  name="pswd"
-                />
-              </div>
-              <p><br /></p>
-              <div class="form-group form-check">
-                <label class="form-check-label">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="remember"
-                  />
-                  Remember me
-                </label>
-              </div>
+              <p><br/></p>
 
-              <button type="submit" class="btn btn-dark btn-lg">Log In</button>
+              <form class="form-group" action="includes/login.inc.php" method="post">
+              <label for="email">Email:</label>
+              <p></p>
+              <input type="email" name="email" placeholder="Email...">
+              <p><br/></p>
+              <label for="pwd_login">Password:</label>
+              <p></p>
+              <input type="password" name="pwd" placeholder="Password...">
+              <p><br/></p>
+              <button type="submit" name="submit" class="btn btn-dark btn-lg">Log in</button>
+              </form>
+
+              <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in all the fields</p>";
+                }
+                else if ($_GET["error"] == "wronglogin"){
+                    echo "<p>This user does not exist.</p>";
+                }
+              }
+              ?>
+
             </div>
           </div>
         </div>
@@ -106,5 +105,6 @@
     <?php 
       include_once 'footer.php'; 
     ?>
+    <script src="menu.js"></script>
   </body>
 </html>
