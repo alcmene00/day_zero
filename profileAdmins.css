@@ -1,5 +1,6 @@
 body {
-  background: url('https://i.pinimg.com/originals/21/79/7b/21797b619f0c2469988e0b0ce87ea778.jpg') no-repeat center center;
+  background: url('https://i.imgur.com/mRV2rl6.jpg') no-repeat center center;
+  min-height: 100vh;
 }
 
 .space {
@@ -7,7 +8,7 @@ body {
 }
 
 .text {
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
   font-size: 40px;
   position: absolute center;
   text-align: center;
@@ -18,7 +19,7 @@ body {
 }
 
 .text1 {
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
   font-size: 21px;
   text-align: center;
   margin-top: -20px;
@@ -101,7 +102,7 @@ body {
   text-align: center;
   background-color:transparent;
   color:#000;
-  font-family:lato;
+  font-family:var(--bs-font-sans-serif);
   font-weight:300;
   font-size:15px;
   max-width:100%;
@@ -139,7 +140,7 @@ body {
   margin: 1px 5px 1px 0px;
   width: 100%;
   text-align:center;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
   font-weight: 300;
   max-width:100%;
 }
@@ -174,63 +175,63 @@ input:hover::-webkit-input-placeholder,
 textarea:hover::-webkit-input-placeholder {
   color: #fff;
   font-size: 15px;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover:focus::-webkit-input-placeholder,
 textarea:hover:focus::-webkit-input-placeholder {
   color: #fff;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover::-moz-placeholder,
 textarea:hover::-moz-placeholder {
   color: #fff;
   font-size: 15px;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover:focus::-moz-placeholder,
 textarea:hover:focus::-moz-placeholder {
   color: #fff;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover::placeholder,
 textarea:hover::placeholder {
   color: #fff;
   font-size: 15px;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover:focus::placeholder,
 textarea:hover:focus::placeholder {
   color: #fff;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover::placeholder,
 textarea:hover::placeholder {
   color: #fff;
   font-size: 15px;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input:hover:focus::-ms-placeholder,
 textarea:hover::focus:-ms-placeholder {
   color: #fff;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 #form {
   position: relative;
   width: 100%;
   margin: 0px auto 0px auto;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 input {
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
   font-size: 15px;
   width: 100%;
   height: 50px;
@@ -249,7 +250,7 @@ input {
 input:hover {
   background: #ccc;
   color: #fff;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 textarea {
@@ -261,7 +262,7 @@ textarea {
   background: transparent;
   outline: none;
   color: #000;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
   font-size: 25px;
   border: solid 1px #eee;
   transition: all 0.9s ease-in-out;
@@ -273,13 +274,13 @@ textarea {
 textarea:hover {
   background: #ccc;
   color: #fff;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
 }
 
 #submit {
   width: 100%;
   padding: 0;
-  font-family: raleway;
+  font-family: var(--bs-font-sans-serif);
   font-size: 20px;
   color: #000;
   outline: none;
