@@ -6,8 +6,7 @@
   ?>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Day Zero - Profile</title>
+  <title>Day Zero - Account</title>
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/sco.js/1.1.0/css/scojs.min.css'><link rel="stylesheet" href="./profileUsers.css">
 
@@ -18,15 +17,6 @@
 ?>
 
 <body>
-<!-- partial:profile.partial.html -->
-<head>
-
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-
-
-</head>
   
   
 
@@ -52,7 +42,7 @@
   </div>
 </div>
 
-<div class="space-mini"></div>
+<div class="space"></div>
 
 
 
@@ -114,6 +104,13 @@
 
 
 
+  <!-- LOG OUT -->
+
+  <div>
+    <input id="submit" type="submit" value="Log Out">
+  </div>
+
+
 
 </div>
 
@@ -122,7 +119,7 @@
 include_once 'footer.php';
 ?>
 
-<!-- partial -->
+<!-- scripts -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
 </body>
