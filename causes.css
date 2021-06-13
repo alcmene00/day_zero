@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .title-img {
   background-size: cover;
   background-position: 0% 50%;  
