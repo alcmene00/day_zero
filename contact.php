@@ -69,12 +69,7 @@ function validateForm() {
           <input type="text" class="contact-text" name="contact-e-mail" placeholder="Your E-mail" />
           <input type="text" class="contact-text" name="contact-name" placeholder="Your Name" />
           <input type="text" class="contact-text" name="contact-subject" placeholder="Subject" />
-          <textarea
-            name="contact-message"
-            class="contact-text"
-            placeholder="Your Message"
-            minlength="10">
-            </textarea>
+          <textarea name="contact-message" class="contact-text" placeholder="Your Message" minlength="10"></textarea>
           <input type="submit" class="contact-button" value="Submit" />
         </form>
       </div>
