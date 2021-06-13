@@ -176,11 +176,11 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="logout">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#logout" aria-expanded="false" aria-controls="logout">
-          <div class="title btn btn-danger btn-outline btn-lg">Log Out</div>
-        </a>
       </h4>
     </div>
+    <form id="form" class="topBefore" action="includes/logout.inc.php" method="post" type="submit">
+    <input id="submit" type="submit" value="Log Out">
+    </form>
   </div>
 
   
