@@ -108,6 +108,5 @@
     <?php 
       include_once 'footer.php'; 
     ?>
-    <script src="menu.js"></script>
   </body>
 </html>
