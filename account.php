@@ -53,7 +53,7 @@
                   echo "<p>Something went wrong.</p>";
                 }
                 else if ($_GET["error"] == "none"){
-                  echo "<p>You are now a member of our community!</p>";
+                  echo "<p>You are now a member of our community! Please login to see your profile page.</p>";
                 }
               }
               ?>
