@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -22,15 +28,23 @@ body {
   background-position: 20% 40%;
 }
 
+header{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
 header::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   left: 0;
   top: 0;
   background-color: rgba(45, 83, 165, 0.05);
   mix-blend-mode: color;
+  z-index: 3;
 }
 
 .main-intro .title {
@@ -56,7 +70,7 @@ header::after {
 
 .main-intro .basic {
   position: absolute;
-  height: 100vh;
+  min-height: 100vh;
   min-width: 100%;
   padding: 0 0 0 0px;
   bottom: 0;
@@ -66,13 +80,15 @@ header::after {
 
 .main-intro .upwater {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   max-height: 100vh;
   padding: 0 0 0 0px;
   top: 0;
   left: 0;
   z-index: 0;
 }
+
+
 
 main {
   font-size: 1.8rem;
@@ -120,12 +136,6 @@ main {
   margin-bottom: 410px;
 }
 
-@media screen and (max-width: 600px) {
-  .text{
-    margin-bottom: 700px;
-  }
-}
-
 .waterdrop {
   width: 80%;
   margin-top: 10%;
@@ -161,4 +171,10 @@ main {
   color: black;
   font-size: 1.8rem;
   margin-bottom: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .text{
+    margin-bottom: 700px;
+  }
 }
