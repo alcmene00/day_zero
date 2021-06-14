@@ -98,6 +98,6 @@
   <?php 
     include_once 'footer.php'; 
   ?>  
-  <script src="app.js"></script>
+  <script src="parallax.js"></script>
   </body>
 </html>
