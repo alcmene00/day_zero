@@ -31,9 +31,14 @@
     <div class="image"> <!-- get from database -->
       <div class="trick">
 
+      
+      <?php
+      $email = $_SESSION["useremail"];
+      ?>
+
       </div>
     </div>
-    <ul class="text">@email</ul> <!-- get from database -->
+    <ul class="text"><?php echo htmlspecialchars($email) ?></ul> <!-- get from database -->
     <div class="text1">User</div> <!-- get from database -->
   </div>
 </div>
@@ -62,7 +67,7 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        email:<br> <!-- get from database -->
+        email: <?php echo htmlspecialchars($email) ?><br> <!-- get from database -->
       </div>
     </div>
   </div>
@@ -85,18 +90,28 @@
 
         
         
-        <form id="form" class="topBefore">
+      <form id="form" class="topBefore" action="includes/update.inc.php" method="post">
+        <input name="update-email" type="text" placeholder="change e-mail"> <!-- get from database -->
+        <input name="update-password" type="text" placeholder="change password"> <!-- get from database -->
+        <input name="update-submit" type="submit" value="Done!">
 
-          <input id="email" type="text" placeholder="change e-mail"> <!-- get from database -->
-          <input id="password" type="text" placeholder="change password"> <!-- get from database -->
-          <input id="submit" type="submit" value="Done!">
+      </form>
 
-        </form>
-
+      <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in all the fields</p>";
+                }
+                else if ($_GET["error"] == "none"){
+                  echo "<p>Updating was successful!</p>";
+                }
+              }
+      ?>
 
         
       </div>
     </div>
+    
   </div>
 
   <!-- log out -->
@@ -111,9 +126,7 @@
     </form>
   </div>
 
-
-
-
+  
 
 
 

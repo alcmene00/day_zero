@@ -31,9 +31,13 @@
     <div class="image"> <!-- get from database -->
       <div class="trick">
 
+      <?php
+      $email = $_SESSION["useremail"];
+      ?>
+
       </div>
     </div>
-    <ul class="text">@email</ul> <!-- get from database -->
+    <ul class="text"><?php echo htmlspecialchars($email) ?></ul> <!-- get from database -->
     <div class="text1">Administrator</div> <!-- get from database -->
   </div>
 </div>
@@ -61,7 +65,7 @@
     </div>
     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
       <div class="panel-body">
-        email:<br> <!-- get from database -->
+        email: <?php echo htmlspecialchars($email) ?><br> <!-- get from database -->
       </div>
     </div>
   </div>
@@ -81,17 +85,25 @@
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-
         
         
-        <form id="form" class="topBefore">
+        <form id="form" class="topBefore" action="includes/update.inc.php" method="post">
 
-          <input id="email" type="text" placeholder="change e-mail"> <!-- get from database -->
-          <input id="password" type="text" placeholder="change password"> <!-- get from database -->
-          <input id="submit" type="submit" value="Done!">
+          <input name="update-password" type="text" placeholder="change password"> <!-- get from database -->
+          <input name="update-submit" type="submit" value="Done!">
 
         </form>
 
+        <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in all the fields</p>";
+                }
+                else if ($_GET["error"] == "none"){
+                  echo "<p>Updating was successful!</p>";
+                }
+              }
+        ?>
 
         
       </div>
@@ -119,13 +131,30 @@
 
         
         
-        <form id="form" class="topBefore">
+        <form id="form" class="topBefore" action="includes/insert.inc.php" method="post">
 
-          <input id="email" type="text" placeholder="e-mail"> <!-- get from database -->
-          <input id="password" type="text" placeholder="password"> <!-- get from database -->
-          <input id="submit" type="submit" value="Done!">
+          <input name="insert-email" type="text" placeholder="e-mail"> <!-- get from database -->
+          <input name="insert-password" type="text" placeholder="password"> <!-- get from database -->
+          <input name="insert-submit" type="submit" value="Done!">
 
         </form>
+
+        <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in all the fields</p>";
+                }
+                else if ($_GET["error"] == "emailtaken"){
+                  echo "<p>This user already exists.</p>";
+                }
+                else if ($_GET["error"] == "stmtfailed"){
+                  echo "<p>Something went wrong.</p>";
+                }
+                else if ($_GET["error"] == "none"){
+                  echo "<p>User is now a member of our community!</p>";
+                }
+              }
+              ?>
 
 
         
@@ -153,15 +182,30 @@
 
         
         
-        <form id="form" class="topBefore">
+        <form id="form" class="topBefore" action="includes/delete.inc.php" method="post">
 
-          <input id="email" type="text" placeholder="e-mail"> <!-- get from database -->
-          <input id="password" type="text" placeholder="password"> <!-- get from database -->
-          <input id="submit" type="submit" value="Done!">
+          <input name="delete-email" type="text" placeholder="e-mail"> <!-- get from database -->
+         <!-- <input name="delete-password" type="text" placeholder="password"> get from database -->
+          <input name="delete-submit" type="submit" value="Done!">
 
         </form>
 
-
+        <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in all the fields</p>";
+                }
+                else if ($_GET["error"] == "emailnotfound"){
+                  echo "<p>This user does not exist.</p>";
+                }
+                else if ($_GET["error"] == "failed"){
+                  echo "<p>Something went wrong.</p>";
+                }
+                else if ($_GET["error"] == "none"){
+                  echo "<p>Deleting was successful!</p>";
+                }
+              }
+              ?>
         
       </div>
     </div>

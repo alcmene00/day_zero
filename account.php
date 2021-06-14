@@ -35,7 +35,7 @@
               <p></p>
               <input type="password" name="pwd" placeholder="Password...">
               <p><br/></p>
-              <button type="submit" name="submit" class="btn btn-dark btn-lg">Sign Up</button>
+              <button type="submit" name="signup-submit" class="btn btn-dark btn-lg">Sign Up</button>
               </form>
 
               <?php
@@ -46,11 +46,14 @@
                 else if ($_GET["error"] == "invalidemail"){
                     echo "<p>Your email is wrong.</p>";
                 }
+                else if ($_GET["error"] == "emailtaken"){
+                  echo "<p>This user already exists.</p>";
+                }
                 else if ($_GET["error"] == "stmtfailed"){
                   echo "<p>Something went wrong.</p>";
                 }
                 else if ($_GET["error"] == "none"){
-                  echo "<p>Signing up was successful!</p>";
+                  echo "<p>You are now a member of our community!</p>";
                 }
               }
               ?>
