@@ -1,11 +1,8 @@
 <?php
 
-if (isset($_POST["submit"])){
-    
-    session_start();
-    session_unset();
-    session_destroy();
+session_start();
+session_unset();
+session_destroy();
 
-    header("location: ../account.php");
-    exit();
-}
+header("location: ../account.php");
+exit();

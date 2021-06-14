@@ -80,14 +80,91 @@ function loginUser($conn, $email, $pwd){
    else if ($checkPwd === true){
        session_start();
        $_SESSION["useremail"] = $emailExists["email"];
+       $_SESSION["userid"] = $emailExists["id"];
+       $id = $_SESSION["userid"];
        if ($_POST["email"] === "admin@dayzero.com"){
-            header("location: ../profileAdmins.php?error=none");
+            header("location: ../profileAdmins.php");
        }
        else {
-            header("location: ../profileUsers.php?error=none");
+            header("location: ../profileUsers.php");
        }
+       
        exit();
    }
 
 }
 
+function insertUser($conn, $email, $pwd){
+    $sql = "INSERT INTO users(email, pwd) VALUES (?,?);";
+    $stmt = mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt, $sql)){
+        header("location: ../account.php?error=stmtfailed");
+        exit();
+    }
+
+    $safePwd = password_hash($pwd, PASSWORD_DEFAULT);
+
+    mysqli_stmt_bind_param($stmt, "ss", $email, $safePwd);
+    mysqli_stmt_execute($stmt);
+
+    mysqli_stmt_close($stmt);
+    header("location: ../profileAdmins.php?error=none");
+    exit();
+}
+
+function deleteUser($conn, $email){
+    $sql = "DELETE FROM users WHERE email = '$email'";
+
+    if($conn->query($sql) == TRUE){
+        header("location: ../profileAdmins.php?error=none");
+        exit();
+    } 
+    else{
+        header("location: ../profileAdmins.php?error=failed");
+        exit();
+    }
+} 
+
+function emptyInputDelete($email){
+    $res;
+    if (empty($email)){
+        $res = true;
+    }
+    else {
+        $res = false;
+    }
+    return $res;
+}
+
+function updateUser($conn, $email, $pwd){
+    session_start();
+    $id=$_SESSION["userid"];
+    $safePwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $sql = "UPDATE users SET email='$email', pwd='$safePwd' WHERE id='$id'";
+
+
+    if($conn->query($sql) == TRUE){
+        $email_before=$_SESSION["useremail"];
+        $_SESSION["useremail"]=$email;
+        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            header("location: ../profileAdmins.php?error=none");
+            exit();
+        }
+        else {
+            header("location: ../profileUsers.php?error=none");
+            exit();
+        }
+    }
+    else {
+        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            header("location: ../profileAdmins.php?error=failed");
+            exit();
+        }
+        else {
+            header("location: ../profileUsers.php?error=failed");
+            exit();
+        }
+    }
+    
+
+}

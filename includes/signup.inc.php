@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST["submit"])) {
+if (isset($_POST["signup-submit"])) {
     $email = $_POST["email"];
     $pwd = $_POST["pwd"];
 
