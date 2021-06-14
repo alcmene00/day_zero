@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <head>
   <link rel="stylesheet" href="menu.css" />
 </head>
@@ -12,7 +16,21 @@
     <li><a href="causes.php">Causes</a></li>
     <li><a href="effects.php">Effects</a></li>
     <li><a href="whatishappening.php">What is happening</a></li>
-    <li><a href="account.php">Account</a></li>
+    <li>
+    <?php
+     if (isset($_SESSION["useremail"])){
+       if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            echo "<a href='profileAdmins.php'>Account</a>";
+       }
+       else {
+        echo "<a href='profileUsers.php'>Account</a>";
+       }
+     }
+     else {
+      echo "<a href='account.php'>Account</a>";
+     }
+     ?>
+    </li>
     <li>
       <a href="search.php"
         ><img src="pictures/search-icon.png" alt="search" width="25px"
