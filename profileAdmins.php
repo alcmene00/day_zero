@@ -91,7 +91,11 @@
 
           <input name="update-password" type="text" placeholder="change password"> <!-- get from database -->
           <input name="update-submit" type="submit" value="Done!">
-
+          <form class="picture-upload" method="POST" enctype="multipart/form-data"> <!-- get from database -->
+              <label>Upload your picture</label>
+              <input type="File" name="file">
+              <input type="submit" name="submit">    
+          </form>
         </form>
 
         <?php
