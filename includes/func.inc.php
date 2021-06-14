@@ -59,7 +59,7 @@ function createUser($conn, $email, $pwd){
     mysqli_stmt_execute($stmt);
 
     mysqli_stmt_close($stmt);
-    header("location: ../profileUsers.php?error=none");
+    header("location: ../account.php?error=none");
     exit();
 }
 

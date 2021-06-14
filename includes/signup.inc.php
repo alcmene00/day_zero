@@ -17,7 +17,7 @@ if (isset($_POST["signup-submit"])) {
         exit();
     }
 
-    if (emailExists($conn, $email)){
+    if (emailExists($conn, $email) === false){
         header("location: ../account.php?error=emailtaken");
     }
 
