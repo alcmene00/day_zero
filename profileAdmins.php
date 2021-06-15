@@ -87,7 +87,7 @@
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           <div class="title btn btn-danger btn-outline btn-lg">Profile Editing</div>
         </a>
       </h4>
@@ -144,6 +144,47 @@
   </div>
 
 
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div class="title btn btn-danger btn-outline btn-lg">Users Editing</div>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        
+        
+        <form id="form" class="topBefore" action="includes/edit.inc.php" method="post">
+          <input name="user-email" type="text" placeholder="give user's email">
+          <input name="edit-email" type="text" placeholder="change email">
+          <input name="edit-password" type="text" placeholder="change password"> <!-- get from database -->
+          <input name="edit-submit" type="submit" value="Done!">
+        </form>
+
+        <?php
+              if (isset($_GET["error"])){
+                if ($_GET["error"] == "emptyinput"){
+                  echo "<p>Please fill in at least one of the fields</p>";
+                }
+                else if ($_GET["error"] == "emptyinputemail"){
+                  echo "<p>Please fill in the email of the user you want to edit.</p>";
+                }
+                else if ($_GET["error"] == "none"){
+                  echo "<p>Updating was successful!</p>";
+                }
+              }
+        ?>
+      </div>
+      
+
+
+
+    </div>
+  </div>
+
+
 
 
 
@@ -152,14 +193,14 @@
   <!-- third panel - inserting users -->
 
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
+    <div class="panel-heading" role="tab" id="headingFour">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           <div class="title btn btn-danger btn-outline btn-lg">Insert A User</div>
         </a>
       </h4>
     </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
       <div class="panel-body">
 
         
@@ -195,6 +236,8 @@
     </div>
   </div>
 
+  
+
 
 
 
@@ -203,14 +246,14 @@
   <!-- fourth panel - deleting user -->
 
   <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFour">
+    <div class="panel-heading" role="tab" id="headingFive">
       <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
           <div class="title btn btn-danger btn-outline btn-lg">Delete A User</div>
         </a>
       </h4>
     </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
       <div class="panel-body">
 
         
