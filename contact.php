@@ -10,20 +10,20 @@
   <?php 
     include_once 'menu.php';
   ?>
+  
+  <!-- SAVE FORM TO DATABASE -->
+  <?php 
+  $db = new mysqli("localhost", "root", "", "day_zero_db");
 
-<?php 
+  if ($db->connect_error) {
+    die("Connection failed: " . $db->connect_error);
+  } 
 
-$db = new mysqli("localhost", "root", "", "day_zero_db");
-
-if ($db->connect_error) {
-  die("Connection failed: " . $db->connect_error);
-} 
-
-if(isset($_POST['contact-e-mail']) && isset($_POST['contact-name']) && isset($_POST['contact-subject']) && isset($_POST['contact-message'])){
-  $contact_email=$_POST['contact-e-mail'];
-  $contact_name=$_POST['contact-name'];
-  $contact_subject=$_POST['contact-subject'];
-  $contact_message=$_POST['contact-message'];
+  if(isset($_POST['contact-e-mail']) && isset($_POST['contact-name']) && isset($_POST['contact-subject']) && isset($_POST['contact-message'])){
+    $contact_email=$_POST['contact-e-mail'];
+    $contact_name=$_POST['contact-name'];
+    $contact_subject=$_POST['contact-subject'];
+    $contact_message=$_POST['contact-message'];
 
   $sql="INSERT INTO `contact_us`(`contact_name`, `contact_email`, `contact_subject`, `contact_message`) VALUES ('$contact_name','$contact_email','$contact_subject','$contact_message')";
 
@@ -36,12 +36,14 @@ if(isset($_POST['contact-e-mail']) && isset($_POST['contact-name']) && isset($_P
   $db->close();
   }
   ?>
-
-<script>
-function validateForm() {
-  var x = document.forms["contact-form"]["contact-e-mail"].value;
-  var y = document.forms["contact-form"]["contact-name"].value;
-  var z = document.forms["contact-form"]["contact-subject"].value;
+ 
+  <!-- CHECK FORM -->
+  <script>
+  function validateForm() {
+    var x = document.forms["contact-form"]["contact-e-mail"].value;
+    var y = document.forms["contact-form"]["contact-name"].value;
+    var z = document.forms["contact-form"]["contact-subject"].value;
+    var m = document.forms["contact-form"]["contact-message"].value;
 
   if (x == "" || x == null) {
     alert("E-mail must be filled out");
@@ -55,9 +57,12 @@ function validateForm() {
     alert("Subject must be filled out");
     return false;
   }
-}
-
-</script>
+  if (m == "" || m == null) {
+    alert("Message must be filled out");
+    return false;
+  }
+  }
+  </script>
 
   <!-- MAIN -->
   <body>
