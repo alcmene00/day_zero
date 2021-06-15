@@ -19,7 +19,7 @@ session_start();
     <li>
     <?php
      if (isset($_SESSION["useremail"])){
-       if ($_SESSION["useremail"] === "admin@dayzero.com"){
+       if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             echo "<a href='profileAdmins.php'>Account</a>";
        }
        else {
