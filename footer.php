@@ -17,7 +17,7 @@
               <a href="https://www.instagram.com/">
                 <img src="pictures/instagram.png" style="width: 9%" />
               </a>
-              <a href="#">
+              <a href="contact.php">
                 <img src="pictures/mail.png" style="width: 13%" />
               </a>
             </div>
