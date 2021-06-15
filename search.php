@@ -18,7 +18,7 @@
       <form  class="search" action="search_results.php" method="POST">
           <h3>What are you looking for?</h3>
           <div class="search-box">
-            <input type="text" name="search" placeholder="Search" />
+            <input type="text" name="search" placeholder="Search" minlength="4"/>
             <button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
           </div>
         </form>

@@ -22,7 +22,7 @@
 
       <form  class="search" action="search_results.php" method="POST">
           <div class="search-box">
-            <input type="text" name="search" placeholder="SEARCH RESULTS" />
+            <input type="text" name="search" placeholder="SEARCH RESULTS" minlength="4"/>
             <button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
           </div>
       </form>
