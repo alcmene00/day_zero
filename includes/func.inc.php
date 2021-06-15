@@ -82,7 +82,7 @@ function loginUser($conn, $email, $pwd){
        $_SESSION["useremail"] = $emailExists["email"];
        $_SESSION["userid"] = $emailExists["id"];
        $id = $_SESSION["userid"];
-       if ($_POST["email"] === "admin@dayzero.com"){
+       if (str_contains($_POST["email"], '@dayzero.com')){
             header("location: ../profileAdmins.php");
        }
        else {
@@ -146,7 +146,7 @@ function updateUser($conn, $email, $pwd){
     if($conn->query($sql) == TRUE){
         $email_before=$_SESSION["useremail"];
         $_SESSION["useremail"]=$email;
-        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+        if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             header("location: ../profileAdmins.php?error=none");
             exit();
         }
@@ -156,7 +156,7 @@ function updateUser($conn, $email, $pwd){
         }
     }
     else {
-        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+        if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             header("location: ../profileAdmins.php?error=failed");
             exit();
         }
@@ -176,7 +176,7 @@ function updateEmail($conn, $email){
 
     if($conn->query($sql) == TRUE){
         $_SESSION["useremail"]=$email;
-        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+        if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             header("location: ../profileAdmins.php?error=none");
             exit();
         }
@@ -186,7 +186,7 @@ function updateEmail($conn, $email){
         }
     }
     else {
-        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+        if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             header("location: ../profileAdmins.php?error=failed");
             exit();
         }
@@ -205,7 +205,7 @@ function updatePwd($conn, $pwd){
 
 
     if($conn->query($sql) == TRUE){
-        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+        if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             header("location: ../profileAdmins.php?error=none");
             exit();
         }
@@ -215,7 +215,7 @@ function updatePwd($conn, $pwd){
         }
     }
     else {
-        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+        if (str_contains($_SESSION["useremail"], '@dayzero.com')){
             header("location: ../profileAdmins.php?error=failed");
             exit();
         }
