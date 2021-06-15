@@ -168,3 +168,84 @@ function updateUser($conn, $email, $pwd){
     
 
 }
+
+function updateEmail($conn, $email){
+    session_start();
+    $id=$_SESSION["userid"];
+    $sql = "UPDATE users SET email='$email' WHERE id='$id'";
+
+    if($conn->query($sql) == TRUE){
+        $_SESSION["useremail"]=$email;
+        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            header("location: ../profileAdmins.php?error=none");
+            exit();
+        }
+        else {
+            header("location: ../profileUsers.php?error=none");
+            exit();
+        }
+    }
+    else {
+        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            header("location: ../profileAdmins.php?error=failed");
+            exit();
+        }
+        else {
+            header("location: ../profileUsers.php?error=failed");
+            exit();
+        }
+    }
+}
+
+function updatePwd($conn, $pwd){
+    session_start();
+    $id=$_SESSION["userid"];
+    $safePwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $sql = "UPDATE users SET pwd='$safePwd' WHERE id='$id'";
+
+
+    if($conn->query($sql) == TRUE){
+        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            header("location: ../profileAdmins.php?error=none");
+            exit();
+        }
+        else {
+            header("location: ../profileUsers.php?error=none");
+            exit();
+        }
+    }
+    else {
+        if ($_SESSION["useremail"] === "admin@dayzero.com"){
+            header("location: ../profileAdmins.php?error=failed");
+            exit();
+        }
+        else {
+            header("location: ../profileUsers.php?error=failed");
+            exit();
+        }
+    }
+    
+
+}
+
+function emptyInputEmail($email){
+    $res;
+    if (empty($email)){
+        $res = true;
+    }
+    else {
+        $res = false;
+    }
+    return $res;
+}
+
+function emptyInputPwd($pwd){
+    $res;
+    if (empty($pwd)){
+        $res = true;
+    }
+    else {
+        $res = false;
+    }
+    return $res;
+}
