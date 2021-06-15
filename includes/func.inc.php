@@ -81,6 +81,7 @@ function loginUser($conn, $email, $pwd){
        session_start();
        $_SESSION["useremail"] = $emailExists["email"];
        $_SESSION["userid"] = $emailExists["id"];
+       $_SESSION["userimage"]=$emailExists["image"];
        $id = $_SESSION["userid"];
        if (str_contains($_POST["email"], '@dayzero.com')){
             header("location: ../profileAdmins.php");
