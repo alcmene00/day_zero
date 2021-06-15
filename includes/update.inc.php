@@ -23,7 +23,7 @@ if (isset($_POST["update-submit"])) {
     }
 }
 else {
-    if ($_SESSION["useremail"] === "admin@dayzero.com"){
+    if (str_contains($_SESSION["useremail"], '@dayzero.com')){
         header("location: ../profileAdmins.php");
             exit();
     }
