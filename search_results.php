@@ -10,24 +10,33 @@
     <title>Day Zero - Search Results</title>
   </head>
 
-  
   <?php 
       include_once 'menu.php';
   ?>
   
-
   <body>
+    
+    <!-- CHECK IF SEARCH FIELD IS EMPTY -->
+<script>
+function validateForm() {
+  var s = document.forms["search-results"]["search"].value;
+
+  if (s == "" || s == null) {
+    alert("You cannot leave this field empty if you want to search something!");
+    return false;
+  }
+}
+</script>
+    
     <!-- MAIN -->
     <main class="background-search">
 
-      <form  class="search" action="search_results.php" method="POST">
+      <form  class="search" name="search-results" action="search_results.php" onsubmit="return validateForm()" method="POST">
           <div class="search-box">
             <input type="text" name="search" placeholder="SEARCH RESULTS" minlength="4"/>
             <button type="submit" name="submit-search"><i class="fa fa-search"></i></button>
           </div>
       </form>
-
-
 
       <div class = "results-container">
       <?php 
