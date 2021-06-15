@@ -33,7 +33,16 @@
 
       
       <?php
-      $email = $_SESSION["useremail"];
+        $email = $_SESSION["useremail"];
+        $image = $_SESSION["userimage"];
+        if (htmlspecialchars($image)!=''){
+          echo "<style>
+          .image{
+            background: url($image);
+            background-size:cover; 
+           }
+           </style>";
+          }
       ?>
 
       </div>
@@ -110,6 +119,30 @@
 
         
       </div>
+       <form class="panel-body" method="POST" enctype="multipart/form-data"> <!-- get from database -->
+            <label>Upload your picture</label>
+            <input type="File" name="file">
+            <input type="submit" name="submit" value="Submit!">    
+       </form>
+       <?php
+       if (isset($_POST["submit"]))
+       {
+            $title = "img";
+            $pname = rand(1000,10000)."-".$_FILES["file"]["name"];
+            $tname = $_FILES["file"]["tmp_name"];
+            $pname = 'pictures/uploads/'.$pname;
+            move_uploaded_file($tname, $pname);
+            $id=$_SESSION["userid"];
+            $sql = "UPDATE users SET image='$pname' WHERE id='$id'";
+            $_SESSION["userimage"]= $pname;
+            if(mysqli_query($conn,$sql)){
+              echo "File Sucessfully uploaded. The image may take some time to appear, please refresh your page.";
+            }
+            else{
+              echo "Upload Error ";
+            }
+       }
+      ?>
     </div>
     
   </div>
