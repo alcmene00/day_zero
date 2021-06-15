@@ -12,10 +12,22 @@
       include_once 'menu.php';
   ?>
   <body>
-    <!-- MAIN -->
+    
+    <!-- CHECK IF SEARCH FIELD IS EMPTY -->
+<script>
+function validateForm() {
+  var s = document.forms["search-form"]["search"].value;
 
+  if (s == "" || s == null) {
+    alert("You cannot leave this field empty if you want to search something!");
+    return false;
+  }
+}
+</script>
+
+    <!-- MAIN -->
     <main class="background-search">
-      <form  class="search" action="search_results.php" method="POST">
+      <form  class="search" name="search-form" action="search_results.php" onsubmit="return validateForm()" method="POST">
           <h3>What are you looking for?</h3>
           <div class="search-box">
             <input type="text" name="search" placeholder="Search" minlength="4"/>
@@ -23,6 +35,7 @@
           </div>
         </form>
     </main>
+
     <!-- FOOTER -->
     <?php 
       include_once 'footer.php';
