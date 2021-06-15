@@ -8,17 +8,24 @@ if (isset($_POST["update-submit"])) {
     require_once 'dbh.php';
     require_once 'func.inc.php';
 
-    if (emptyInput($updateemail, $updatepwd) !== false){
+    if ((emptyInputEmail($updateemail) !== false) && (emptyInputPwd($updatepwd) !== false)){
         header("location: ../profileUsers.php?error=emptyinput");
         exit();
     }
-
-    updateUser($conn, $updateemail, $updatepwd);
+    else if (emptyInputEmail($updateemail) !== false){
+        updatePwd($conn, $updatepwd);
+    }
+    else if (emptyInputPwd($updatepwd) !== false){
+        updateEmail($conn, $updateemail);
+    }
+    else{
+        updateUser($conn, $updateemail, $updatepwd);
+    }
 }
 else {
     if ($_SESSION["useremail"] === "admin@dayzero.com"){
         header("location: ../profileAdmins.php");
-        exit();
+            exit();
     }
     else {
         header("location: ../profileUsers.php");
