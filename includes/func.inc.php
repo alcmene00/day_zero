@@ -250,3 +250,55 @@ function emptyInputPwd($pwd){
     }
     return $res;
 }
+
+function editUser($conn, $email, $newemail, $pwd){
+    $emailExists = emailExists($conn, $email);
+    $id=$emailExists["id"];
+    $safePwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $sql = "UPDATE users SET email='$newemail', pwd='$safePwd' WHERE id='$id'";
+
+
+    if($conn->query($sql) == TRUE){
+            header("location: ../profileAdmins.php?error=none");
+            exit();
+    }
+    else {
+            header("location: ../profileAdmins.php?error=failed");
+            exit();
+    }
+    
+
+}
+
+function editEmail($conn, $email, $newemail){
+    $emailExists = emailExists($conn, $email);
+    $id=$emailExists["id"];
+    $sql = "UPDATE users SET email='$newemail' WHERE id='$id'";
+
+
+    if($conn->query($sql) == TRUE){
+            header("location: ../profileAdmins.php?error=none");
+            exit();
+    }
+    else {
+            header("location: ../profileAdmins.php?error=failed");
+            exit();
+    }
+}
+
+function editPwd($conn, $email, $pwd){
+    $emailExists = emailExists($conn, $email);
+    $id=$emailExists["id"];
+    $safePwd = password_hash($pwd, PASSWORD_DEFAULT);
+    $sql = "UPDATE users SET pwd='$safePwd' WHERE id='$id'";
+
+
+    if($conn->query($sql) == TRUE){
+            header("location: ../profileAdmins.php?error=none");
+            exit();
+    }
+    else {
+            header("location: ../profileAdmins.php?error=failed");
+            exit();
+    }
+}
