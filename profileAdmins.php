@@ -101,7 +101,7 @@
         <?php
               if (isset($_GET["error"])){
                 if ($_GET["error"] == "emptyinput"){
-                  echo "<p>Please fill in all the fields</p>";
+                  echo "<p>Please fill in at least one of the fields</p>";
                 }
                 else if ($_GET["error"] == "none"){
                   echo "<p>Updating was successful!</p>";
