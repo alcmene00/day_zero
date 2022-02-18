@@ -1,5 +1,5 @@
-## University Project 
-# An informative website about Water Scarcity 
+# University Project 
+## An informative website about Water Scarcity 
 
 
 
